@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>SubDL Settings</title>
+  <title>SubDL + DeepL Ayarlari</title>
   <style>
     * { box-sizing: border-box; }
     body {
@@ -11,7 +11,15 @@
       font-size: 13px;
       font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
     }
-    .section { margin-bottom: 16px; }
+    .section { margin-bottom: 20px; }
+    .section-title {
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      opacity: 0.5;
+      margin-bottom: 8px;
+      letter-spacing: 0.5px;
+    }
     label { display: block; margin-bottom: 4px; font-weight: 500; }
     input[type="text"], input[type="password"] {
       width: 100%;
@@ -20,21 +28,28 @@
       border: 1px solid rgba(0,0,0,0.2);
       border-radius: 4px;
     }
-    .help {
-      margin-top: 4px;
-      font-size: 11px;
-      color: rgba(0,0,0,0.5);
-    }
+    .help { margin-top: 4px; font-size: 11px; color: rgba(0,0,0,0.5); }
     a { color: #007AFF; text-decoration: none; }
+    hr { border: none; border-top: 1px solid rgba(0,0,0,0.1); margin: 16px 0; }
   </style>
 </head>
 <body>
+
   <div class="section">
-    <label>SubDL API Key</label>
-    <input type="password" id="api-key" data-pref-key="api_key" placeholder="SubDL API key'ini buraya gir" />
-    <p class="help">
-      API key almak için <a href="https://subdl.com">subdl.com</a> → hesabına gir → Settings → API Key
-    </p>
+    <div class="section-title">SubDL</div>
+    <label for="api-key">SubDL API Key</label>
+    <input type="password" id="api-key" data-pref-key="api_key" placeholder="SubDL API keyini buraya gir" />
+    <p class="help">API key almak icin <a href="https://subdl.com">subdl.com</a> hesabina gir &rarr; Settings &rarr; API Key</p>
   </div>
+
+  <hr />
+
+  <div class="section">
+    <div class="section-title">DeepL Ceviri</div>
+    <label for="deepl-key">DeepL API Key</label>
+    <input type="password" id="deepl-key" data-pref-key="deepl_key" placeholder="DeepL Free API keyini buraya gir" />
+    <p class="help">API key almak icin <a href="https://www.deepl.com/pro-api">deepl.com/pro-api</a> adresine gir &rarr; Free plan sec &rarr; Authentication Key kopyala (sonu :fx ile biter)</p>
+  </div>
+
 </body>
 </html>
