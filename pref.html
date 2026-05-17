@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>SubDL Settings</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      padding: 16px;
+      margin: 0;
+      font-size: 13px;
+      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+    }
+    .section { margin-bottom: 16px; }
+    label { display: block; margin-bottom: 4px; font-weight: 500; }
+    input[type="text"], input[type="password"] {
+      width: 100%;
+      padding: 5px 8px;
+      font-size: 13px;
+      border: 1px solid rgba(0,0,0,0.2);
+      border-radius: 4px;
+    }
+    .help {
+      margin-top: 4px;
+      font-size: 11px;
+      color: rgba(0,0,0,0.5);
+    }
+    a { color: #007AFF; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <div class="section">
+    <label>SubDL API Key</label>
+    <input type="password" id="api-key" data-pref-key="api_key" placeholder="SubDL API key'ini buraya gir" />
+    <p class="help">
+      API key almak için <a href="https://subdl.com">subdl.com</a> → hesabına gir → Settings → API Key
+    </p>
+  </div>
+</body>
+</html>
