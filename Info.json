@@ -1,0 +1,25 @@
+{
+  "name": "SubDL Subtitles",
+  "identifier": "com.subdl.subtitles",
+  "version": "1.0.0",
+  "description": "SubDL altyazi — Turkce, Ingilizce, Bulgarca",
+  "author": {
+    "name": "6jzpwxtn2k-bot",
+    "url": "https://github.com/6jzpwxtn2k-bot/iina-subdl-subtitles"
+  },
+  "ghVersion": 2,
+  "ghRepo": "6jzpwxtn2k-bot/iina-subdl-subtitles",
+  "entry": "dist/index.js",
+  "permissions": ["show-osd", "network-request"],
+  "allowedDomains": ["*"],
+  "preferencesPage": "pref.html",
+  "preferenceDefaults": {
+    "api_key": ""
+  },
+  "subtitleProviders": [
+    { "id": "subdl-tr",  "name": "SubDL — Turkce" },
+    { "id": "subdl-en",  "name": "SubDL — English" },
+    { "id": "subdl-bg",  "name": "SubDL — Bulgarca" },
+    { "id": "subdl-all", "name": "SubDL — Tumu (TR+EN+BG)" }
+  ]
+}
